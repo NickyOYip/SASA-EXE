@@ -1,3 +1,5 @@
-import './style.css'
+import './styles/main.css'
+import { App } from './src/app.js'
 
-// Your JavaScript code goes here
+// Initialize the application
+const app = new App();
