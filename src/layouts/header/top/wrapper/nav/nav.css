@@ -256,7 +256,8 @@ a {
   text-align: center;
   color: #fff;
   border-radius: 13px;
-  background-color: #ff0054;
+  align-items: center;      
+  justify-content: center; 
 }
 
 .nav-shopping-cart-menu {
@@ -425,26 +426,33 @@ a {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  margin-right: 10px;
+  margin: 0;
   position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .nav-selector-label {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: white;
   border: 2px solid rgb(221, 221, 221);
   margin-right: 18px;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .nav-selector-label::after {
   content: "";
   display: block;
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  margin: 2px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: transparent;
 }
 
@@ -459,7 +467,10 @@ a {
   border-radius: 50%;
   width: 8px;
   height: 8px;
-  margin: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgb(190, 190, 190);
 }
 
@@ -474,7 +485,10 @@ a {
   border-radius: 50%;
   width: 8px;
   height: 8px;
-  margin: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgb(74, 144, 226);
 }
 
@@ -492,6 +506,13 @@ a {
 .nav-menu-with-dropdown {
   position: relative;
 }
+
+/* Fix icon alignment in nav-menu-link */
+.nav-menu-link .ico {
+  line-height: inherit;
+  vertical-align: middle;
+}
+
 
 .nav-dropdown-menu {
   display: none;
@@ -535,7 +556,6 @@ a {
   width: 340px;
   max-height: 535px;
   box-sizing: border-box;
-  overflow: auto;
   padding: 10px 20px;
   flex-shrink: 0;
 }
@@ -547,7 +567,7 @@ a {
   min-width: 300px;
   height: auto;
   min-height: 30px;
-  padding: 5px 3px;
+  padding: 5px 1px;
   box-sizing: border-box;
 }
 
@@ -570,8 +590,8 @@ a {
 .nav-dropdown-title {
   display: inline-block;
   height: auto;
-  min-height: 30px;
-  line-height: 30px;
+  min-height: 25px;
+  line-height: 25px;
   font-weight: normal;
   flex-grow: 1;
   white-space: nowrap;
