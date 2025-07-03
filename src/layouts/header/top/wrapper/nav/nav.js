@@ -11,48 +11,345 @@ export class Nav {
 
   createElement() {
     this.element = document.createElement('nav');
-    this.element.className = 'nav';
+    this.element.className = 'headerA__nav-menu nav-menu';
     this.element.innerHTML = `
-      <div class="nav-container">
-        <div class="nav-section nav-section--primary">
-          <ul class="nav-list nav-list--primary">
-            <li class="nav-item">
-              <a class="nav-submenu-link"><i class="ico ico-mobile nav-submenu-icon" style="color: rgb(68, 68, 68);"></i></a>
-              <div class="download-app-menu nav-download-app-menu"><div><section><div class="download-app-menu-text qr-code-text">Scan QR Code to Download</div><div class="qr-code-image"><canvas height="160" width="160" style="height: 128px; width: 128px;"></canvas></div></section><div class="download-app-menu-icon"><a class="download-app-menu-link" href="https://play.google.com/store/apps/details?id=hk.com.nineyi.shop.s000017" target="_blank" rel="noopener noreferrer"><i class="sc-TlkDZ jyXyZl"></i></a><a class="download-app-menu-link" href="https://itunes.apple.com/hk/app/id1551748743" target="_blank" rel="noopener noreferrer"><i class="sc-TlkDZ cShwyD"></i></a></div></div></div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-submenu-link" data-qe-id="header-member-logout-text"><i class="ico ico-user nav-submenu-icon" style="color: rgb(68, 68, 68);"></i></a>
-              <div class="nav-my-account"><ul class="nav-my-account-ul"><li class="nav-my-account-li"><a href="//www.sasa.com.hk/V2/TradesOrder/TradesOrderList?shopId=17" rel="nofollow" class="nav-my-account-link" data-qe-id="menu_check_order">eShop Orders</a></li><li class="nav-my-account-li"><a href="//www.sasa.com.hk/V2/VipMember/VIPMemberRelay?shopId=17" rel="nofollow" class="nav-my-account-link" data-qe-id="menu_member_center">Membership Card</a></li><li class="nav-my-account-li"><a href="//www.sasa.com.hk/TraceSalePageList/TraceSalePageList" rel="nofollow" class="nav-my-account-link" data-qe-id="menu_my_fav">My Wishlist</a></li><li class="nav-my-account-li"><a href="//www.sasa.com.hk/v2/ECoupon/MyECoupon" rel="nofollow" class="nav-my-account-link" data-qe-id="menu_my_coupon">eShop Coupons</a></li><li class="nav-my-account-li"><a class="nav-my-account-link" rel="nofollow" data-qe-id="menu_login_reg">Log In/Sign Up</a></li></ul></div>
-            </li>
-            <li class="nav-item-cart">
-              <a class="nav-submenu-link" href="//www.sasa.com.hk/V2/ShoppingCart/Index?shopId=17" data-qe-id="header-shopping-cart-icon"><i class="ico ico-shopping nav-submenu-icon" style="color: rgb(68, 68, 68);"></i><span class="shopping-cart-badge" style="color: rgb(255, 255, 255); background-color: rgb(237, 0, 140);">2</span></a>
-              <div class="nav-shopping-cart-menu"><div class=""><div class="has-shopping-cart-item"><div class="has-item-text">Recently Added</div><ul class="nav-shopping-cart-ul"><li><div class="nav-shopping-cart-li false"><a class="nav-shopping-cart-link" href="/SalePage/Index/229480"><figure class="image-frame nav-shopping-cart-image"><img loading="lazy" class="image-body" src="//img.cdn.91app.hk/webapi/imagesV3/Cropped/SalePage/229480/0/638868772892570000?v=1" alt="【Online Exclusive】L'Occitane Shea Butter Ultra Rich Lip Balm 4.5g"></figure><div class="nav-shopping-cart-detail"><div class="nav-shopping-cart-title">【Online Exclusive】L'Occitane Shea Butter Ultra Rich Lip Balm 4.5g</div><span class="sc-gWAFUw bSgbKj">HK$52.00</span></div></a><a class="remove-product-link" data-sale-page-id="229480" data-sale-page-seq="0" data-sale-page-name="【Online Exclusive】L'Occitane Shea Butter Ultra Rich Lip Balm 4.5g" data-sale-page-price="52" data-sku-id="2727624" data-shopping-cart-id="24406561" data-cart-extend-info-item-group="0" data-point-pay-id="0"><i class="ico ico-delete"></i></a></div><ul class="sc-NrEwa hkoKCm extra-purchase-item-block"></ul></li><li><div class="nav-shopping-cart-li false"><a class="nav-shopping-cart-link" href="/SalePage/Index/314155"><figure class="image-frame nav-shopping-cart-image"><img loading="lazy" class="image-body" src="//img.cdn.91app.hk/webapi/imagesV3/Cropped/SalePageSKU/3143696/0/638868772703270000?v=1" alt="Innisfree Green Tea Hydrating Amino Acid Cleansing Foam 150g"></figure><div class="nav-shopping-cart-detail"><div class="nav-shopping-cart-title">Innisfree Green Tea Hydrating Amino Acid Cleansing Foam 150g</div><span class="sc-gWAFUw bSgbKj">HK$42.00</span></div></a><a class="remove-product-link" data-sale-page-id="314155" data-sale-page-seq="0" data-sale-page-name="Innisfree Green Tea Hydrating Amino Acid Cleansing Foam 150g" data-sale-page-price="42" data-sku-id="3143696" data-shopping-cart-id="24406558" data-cart-extend-info-item-group="0" data-point-pay-id="0"><i class="ico ico-delete"></i></a></div><ul class="sc-NrEwa hkoKCm extra-purchase-item-block"></ul></li></ul><div class="nav-shopping-cart-summary"><button data-qe-id="header-shopping-cart-checkout-btn" class="sc-iQeKKP sc-kCtSUc cIeURA idnCPQ">Checkout</button></div></div></div></div>
-            </li>
-            <li class="nav-item">
-              <a class="sc-zRDVy bBVaPb nav-submenu-link flex-gap" style="color: rgb(68, 68, 68); pointer-events: auto;"><i class="ico ico-earth nav-submenu-icon"></i><div class="sc-iwUaVq czpKYI">English (US)</div><i class="ico ico-chevron-down"></i><div class="sc-OIhXX ekDbZl"><div class="sc-dfdIjj hFKvP">Language</div><div class="sc-gCftrV jEiWpm"><input type="radio" class="sc-jtdBMk bEYPCz" value="en-US" checked=""><label class="sc-gEXpur iZwpjC"></label><div class="sc-iKSKfW drtjkh">English (US)</div></div><div class="sc-gCftrV jEiWpm"><input type="radio" class="sc-jtdBMk bEYPCz" value="zh-HK"><label class="sc-gEXpur iZwpjC"></label><div class="sc-iKSKfW drtjkh">中文 (香港)</div></div></div></a>
-            </li>
-            <li class="nav-item">
-              <a class="sc-zRDVy bBVaPb nav-submenu-link flex-gap" style="color: rgb(68, 68, 68);"><i class="ico ico-exchange-dollar nav-submenu-icon"></i><div class="sc-iwUaVq czpKYI">HKD</div><i class="ico ico-chevron-down"></i><div class="sc-OIhXX ekDbZl"><div class="sc-dfdIjj hFKvP">Currency</div><div class="sc-gCftrV jEiWpm"><input type="radio" class="sc-jtdBMk bEYPCz" value="HKD" checked=""><label class="sc-gEXpur iZwpjC"></label><div class="sc-iKSKfW drtjkh">HKD 港幣</div></div><div class="sc-gCftrV jEiWpm"><input type="radio" class="sc-jtdBMk bEYPCz" value="MOP"><label class="sc-gEXpur iZwpjC"></label><div class="sc-iKSKfW drtjkh">MOP Pataca</div></div></div></a>
-            </li>
-          </ul>
-        </div>
+      <!-- Sub Menu (Top Row) -->
+      <ul class="headerA__nav-menu-sub nav-menu-ul">
         
-        <div class="nav-section nav-section--secondary">
-          <ul class="nav-list nav-list--secondary">
-            <li class="nav-item">
-              <a href="/stores" class="nav-link">Stores</a>
-            </li>
-            <li class="nav-item">
-              <a href="/contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="/help" class="nav-link">Help</a>
-            </li>
-            <li class="nav-item">
-              <a href="/account" class="nav-link">My Account</a>
-            </li>
-          </ul>
-        </div>
+        <!-- Mobile App Download -->
+        <li class="sub-nav-li">
+          <a class="nav-submenu-link">
+            <i class="ico ico-mobile nav-submenu-icon" style="color: rgb(68, 68, 68);"></i>
+          </a>
+          <div class="download-app-menu nav-download-app-menu">
+            <div>
+              <section>
+                <div class="download-app-menu-text qr-code-text">Scan QR Code to Download</div>
+                <div class="qr-code-image">
+                  <canvas height="160" width="160" style="height: 128px; width: 128px;"></canvas>
+                </div>
+              </section>
+              <div class="download-app-menu-icon">
+                <a class="download-app-menu-link" 
+                   href="https://play.google.com/store/apps/details?id=hk.com.nineyi.shop.s000017" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  <i class="sc-TlkDZ jyXyZl"></i>
+                </a>
+                <a class="download-app-menu-link" 
+                   href="https://itunes.apple.com/hk/app/id1551748743" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                  <i class="sc-TlkDZ cShwyD"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- User Account Menu -->
+        <li class="sub-nav-li">
+          <a class="nav-submenu-link" data-qe-id="header-member-logout-text">
+            <i class="ico ico-user nav-submenu-icon" style="color: rgb(68, 68, 68);"></i>
+          </a>
+          <div class="nav-my-account">
+            <ul class="nav-my-account-ul">
+              <li class="nav-my-account-li">
+                <a href="//www.sasa.com.hk/V2/TradesOrder/TradesOrderList?shopId=17" 
+                   rel="nofollow" 
+                   class="nav-my-account-link" 
+                   data-qe-id="menu_check_order">eShop Orders</a>
+              </li>
+              <li class="nav-my-account-li">
+                <a href="//www.sasa.com.hk/V2/VipMember/VIPMemberRelay?shopId=17" 
+                   rel="nofollow" 
+                   class="nav-my-account-link" 
+                   data-qe-id="menu_member_center">Membership Card</a>
+              </li>
+              <li class="nav-my-account-li">
+                <a href="//www.sasa.com.hk/TraceSalePageList/TraceSalePageList" 
+                   rel="nofollow" 
+                   class="nav-my-account-link" 
+                   data-qe-id="menu_my_fav">My Wishlist</a>
+              </li>
+              <li class="nav-my-account-li">
+                <a href="//www.sasa.com.hk/v2/ECoupon/MyECoupon" 
+                   rel="nofollow" 
+                   class="nav-my-account-link" 
+                   data-qe-id="menu_my_coupon">eShop Coupons</a>
+              </li>
+              <li class="nav-my-account-li">
+                <a class="nav-my-account-link" 
+                   rel="nofollow" 
+                   data-qe-id="menu_login_reg">Log In/Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Shopping Cart -->
+        <li class="sub-nav-li nav-shopping-cart">
+          <a class="nav-submenu-link" 
+             href="//www.sasa.com.hk/V2/ShoppingCart/Index?shopId=17" 
+             data-qe-id="header-shopping-cart-icon">
+            <i class="ico ico-shopping nav-submenu-icon" style="color: rgb(68, 68, 68);"></i>
+            <span class="shopping-cart-badge" 
+                  style="color: rgb(255, 255, 255); background-color: rgb(237, 0, 140);">0</span>
+          </a>
+          <div class="nav-shopping-cart-menu">
+            <div class="">
+              <div class="no-item-content">Your shopping cart is empty</div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Language Selector -->
+        <li class="sub-nav-li">
+          <a class="nav-submenu-link flex-gap" 
+             style="color: rgb(68, 68, 68); pointer-events: auto;">
+            <i class="ico ico-earth nav-submenu-icon"></i>
+            <div class="nav-selector-text">English (US)</div>
+            <i class="ico ico-chevron-down"></i>
+            <div class="nav-selector-dropdown">
+              <div class="nav-selector-title">Language</div>
+              <div class="nav-selector-option">
+                <input type="radio" name="language" class="nav-selector-radio" value="en-US" checked="">
+                <label class="nav-selector-label"></label>
+                <div class="nav-selector-label-text">English (US)</div>
+              </div>
+              <div class="nav-selector-option">
+                <input type="radio" name="language" class="nav-selector-radio" value="zh-HK">
+                <label class="nav-selector-label"></label>
+                <div class="nav-selector-label-text">中文 (香港)</div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <!-- Currency Selector -->
+        <li class="sub-nav-li">
+          <a class="nav-submenu-link flex-gap" style="color: rgb(68, 68, 68);">
+            <i class="ico ico-exchange-dollar nav-submenu-icon"></i>
+            <div class="nav-selector-text">HKD</div>
+            <i class="ico ico-chevron-down"></i>
+            <div class="nav-selector-dropdown">
+              <div class="nav-selector-title">Currency</div>
+              <div class="nav-selector-option">
+                <input type="radio" name="currency" class="nav-selector-radio" value="HKD" checked="">
+                <label class="nav-selector-label"></label>
+                <div class="nav-selector-label-text">HKD 港幣</div>
+              </div>
+              <div class="nav-selector-option">
+                <input type="radio" name="currency" class="nav-selector-radio" value="MOP">
+                <label class="nav-selector-label"></label>
+                <div class="nav-selector-label-text">MOP Pataca</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Main Menu (Bottom Row) -->
+      <div class="headerA__nav-menu-main">
+        <ul class="nav-menu-ul">
+          
+          <!-- Category Menu -->
+          <li class="nav-menu-li header-category-menu-li shop-category-multi-level-menu-li">
+            <a class="nav-menu-link">
+              <div class="nav-menu-title" style="color: rgb(68, 68, 68);">Category</div>
+              <i class="ico ico-chevron-down" style="color: rgb(68, 68, 68);"></i>
+            </a>
+          </li>
+
+          <!-- Sasa Exclusive -->
+          <li class="nav-menu-li">
+            <a class="nav-menu-link" 
+               href="//www.sasa.com.hk/page/BrandPromotion" 
+               style="color: rgb(68, 68, 68);">
+              <div class="nav-menu-title">Sasa Exclusive</div>
+            </a>
+          </li>
+
+          <!-- Latest Offers with Dropdown -->
+          <li class="nav-menu-li nav-menu-with-dropdown">
+            <a class="nav-menu-link" style="color: rgb(68, 68, 68);">
+              <div class="nav-menu-title">Latest Offers</div>
+              <i class="ico ico-chevron-down"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <div class="nav-dropdown-container">
+                <div class="nav-dropdown-content">
+                  <div class="nav-dropdown-section">
+                    <div class="nav-dropdown-wrapper">
+                      <ul class="nav-dropdown-list">
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/v2/Promotion/List" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Limited-Time Promotions ⏰</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/HotHeroItems" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Top Brands Special Price🚨</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/PIPFragrance" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Fragrance Limited-Time Promotion🫧</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/SuisseProgramme" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Suisse Programme Online Exclusive Offers⚡</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/LaEstephe" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">La Estephe Limted-Time Offer ✨</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/Eoyunggam" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Eoyunggam Limited-Time Offer</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/DrG" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Dr.G Limited-Time Offer</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/MethodeSwiss" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Methode Swiss Limited-Time Offer</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/Rexaline" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Rexaline Limited-Time Offer</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/Eleanor" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Eleanor Limited-Time Offer</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/AHAVA" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">AHAVA Limite-Time Offer</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/V2/Brand/yutakanaseikatsu" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Yutakana Seikatsu Limited-Time Offer</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/LorealParis" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">L'Oreal Paris Up to 32% Off</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/Maybelline" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Maybelline Up to 50% Off</div>
+                          </a>
+                        </li>
+                        <li class="nav-dropdown-item">
+                          <a href="https://www.sasa.com.hk/page/Cobolife" 
+                             class="nav-dropdown-link" 
+                             style="color: rgb(51, 51, 51);">
+                            <div class="nav-dropdown-title">Slimming & Beauty🥗</div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Top Sellers -->
+          <li class="nav-menu-li">
+            <a class="nav-menu-link" 
+               href="//www.sasa.com.hk/page/topsellers" 
+               style="color: rgb(68, 68, 68);">
+              <div class="nav-menu-title">Top Sellers</div>
+            </a>
+          </li>
+
+          <!-- Brand -->
+          <li class="nav-menu-li">
+            <a class="nav-menu-link" 
+               href="https://www.sasa.com.hk/v2/Brand" 
+               style="color: rgb(68, 68, 68);">
+              <div class="nav-menu-title">Brand</div>
+            </a>
+          </li>
+
+          <!-- Beauty Blog -->
+          <li class="nav-menu-li">
+            <a class="nav-menu-link" 
+               href="//www.sasa.com.hk/v2/shop/InfoModuleList#/" 
+               style="color: rgb(68, 68, 68);">
+              <div class="nav-menu-title">Beauty Blog</div>
+            </a>
+          </li>
+
+          <!-- Payment Offers -->
+          <li class="nav-menu-li">
+            <a class="nav-menu-link" 
+               href="//www.sasa.com.hk/page/PaymentPromotions" 
+               style="color: rgb(68, 68, 68);">
+              <div class="nav-menu-title">Payment Offers</div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Search Box -->
+        <span class="sub-nav-li nav-search-box">
+          <form class="ns-search-form">
+            <div class="search-wrapper">
+              <input class="ns-search-input" 
+                     type="search" 
+                     placeholder="Search" 
+                     name="q" 
+                     id="ns-search-input" 
+                     autocomplete="off" 
+                     data-qe-id="header-search-input">
+              <a class="searchkeyword ns-search-btn" data-qe-id="header-search-icon">
+                <i class="ico ico-search"></i>
+                <span class="search-btn-text">Search</span>
+              </a>
+            </div>
+          </form>
+        </span>
       </div>
     `;
   }

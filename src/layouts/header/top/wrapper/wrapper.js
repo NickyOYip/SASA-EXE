@@ -22,9 +22,9 @@ export class Wrapper {
 
   createElement() {
     this.element = document.createElement('div');
-    this.element.className = 'wrapper';
+    this.element.className = 'headerA__wrapper';
     this.element.innerHTML = `
-      <div class="wrapper-content">
+      <div class="headerA__inner-wrapper">
         <div class="logo-container"></div>
         <div class="nav-container"></div>
       </div>

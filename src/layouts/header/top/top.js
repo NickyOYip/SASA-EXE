@@ -22,7 +22,8 @@ export class Top {
 
   createElement() {
     this.element = document.createElement('div');
-    this.element.className = 'header__top';
+    this.element.className = 'headerA__top headerA__top--fix';
+    this.element.style.backgroundColor = 'rgb(255, 255, 255)';
     this.element.innerHTML = `
       <div class="top-message-container"></div>
       <div class="wrapper-container"></div>
