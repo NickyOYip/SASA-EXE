@@ -1,0 +1,52 @@
+/* Navigation Component Styles */
+.nav {
+    flex: 5;
+    box-sizing: border-box;
+    height: 100px;
+    padding-left: 2%;
+    flex-flow: column;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+}
+
+
+.nav-section--primary {
+    flex: 5;
+    box-sizing: border-box;
+    height: 100px;
+    padding-left: 2%;
+    flex-flow: column;
+
+}
+.nav-list--primary{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: flex-end;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    z-index: 2;
+}
+.nav-submenu-link{
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.ico {
+    font-family: "nine1" !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}

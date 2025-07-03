@@ -1,0 +1,65 @@
+/* Official App Footer Column Styles */
+.footer-column--3 {
+    float: left;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.fnpSre {
+    -webkit-font-smoothing: antialiased;
+    line-height: 2.2;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(74, 78, 92);
+}
+
+
+.layout-footer-wrapper .qr-code-image {
+    padding-bottom: 5px;
+    width: auto;
+}
+.qr-code-image {
+    height: 140px;
+    padding-bottom: 5px;
+    width: auto;
+}
+
+.layout-footer-wrapper .download-app-menu-icon {
+    display: -webkit-flex;
+    display: flex;
+    gap: 4px;
+    width: auto;
+}
+
+.layout-footer-wrapper .download-app-menu-link {
+    flex: 1;
+    height: 38px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.layout-footer-wrapper .download-app-menu-link:first-child i {
+    width: 110px;
+}
+
+.jyXyZl {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    background-image: url(https://cms.cdn.91app.hk/lib/cms-theme-core/3.68.6/images/badge_common_googleplay.svg);
+}
+
+.layout-footer-wrapper .download-app-menu-link:last-child i {
+    width: 98.4px;
+}
+
+.cShwyD {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: inherit;
+    background-image: url(https://cms.cdn.91app.hk/lib/cms-theme-core/3.68.6/images/badge_common_applestore.svg);
+}

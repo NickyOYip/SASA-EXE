@@ -1,0 +1,16 @@
+/* Header Top Section Styles */
+.header__top {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    width: 100%;
+    min-width: 1280px;
+}
+
+.top-message-container {
+    width: 100%;
+}
+
+.wrapper-container {
+    width: 100%;
+}

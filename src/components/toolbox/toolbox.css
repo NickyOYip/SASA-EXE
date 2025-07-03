@@ -1,0 +1,98 @@
+/* Toolbox Component Styles */
+.toolbox__container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toolbox--bounce-in {
+  animation: bounceIn 0.8s ease-out;
+}
+
+
+.toolbox__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbox__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.toolbox__button--shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toolbox__button--custom {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toolbox__icon {
+  font-size: inherit;
+  color: white;
+}
+
+/* Tooltip Styles */
+.toolbox__tooltip {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1001;
+}
+
+.toolbox__item:hover .toolbox__tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip--custom {
+  max-width: 200px;
+}
+
+.tooltip--custom--clickable {
+  pointer-events: auto;
+}
+
+.place-left {
+  margin-right: 10px;
+}
+
+.type-dark {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Styled Components Classes */
+.sc-fTUBLH.dBSizE {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

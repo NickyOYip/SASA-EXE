@@ -7,6 +7,26 @@
     min-height: 100px;
 }
 
+.header-top-container,
+.header-bottom-container,
+.header-toolbox-container {
+    position: relative;
+    width: 100%;
+}
+
+.header-toolbox-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    pointer-events: none;
+}
+
+.header-toolbox-container > * {
+    pointer-events: auto;
+}
+
 .header__top {
     position: fixed;
     z-index: 500;

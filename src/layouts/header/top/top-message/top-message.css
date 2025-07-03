@@ -1,0 +1,16 @@
+/* Top Message Component Styles */
+.top-message {
+    font-size: 13px;
+    line-height: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex
+;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    transform: translateZ(0px);
+    background-color: rgb(227, 3, 147);
+    color: rgb(255, 252, 252);
+    padding: 7px 16px;
+}

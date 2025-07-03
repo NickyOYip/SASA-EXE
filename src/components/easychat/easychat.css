@@ -1,0 +1,38 @@
+#easychat-floating-button-left.easychat-float-botton-show.nine-one-icon-style {
+    width: 40px !important;
+    height: 40px !important;
+    left: 36px !important;
+    bottom: 45px !important;
+    z-index: 554 !important;
+}
+#easychat-floating-button.omnichat-icon-wrapper.plugin-animation, #easychat-floating-button-left.omnichat-icon-wrapper.plugin-animation {
+    border-radius: 50px 50px 0 50px !important;
+    width: 60px !important;
+    height: 60px !important;
+}
+#easychat-floating-button-left.omnichat-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: #408eff;
+    border-radius: 50px 50px 0 50px;
+    cursor: pointer;
+    transform: scaleX(-1);
+    box-shadow: 0 0 20px #777777a3;
+    border: 0;
+}
+#easychat-floating-button-left {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    overflow: auto;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    top: unset;
+    right: unset;
+    z-index: 100000000;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}

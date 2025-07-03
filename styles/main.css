@@ -8,9 +8,7 @@
 /* Global application styles */
 #app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+  }
 
 /* Global component styles that apply across the entire site */
 .btn {

@@ -1,0 +1,34 @@
+/* About Footer Column Styles */
+.footer-column--1 {
+    float: left;
+    padding-right: 1.04167%;
+    padding-left: 1.04167%;
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    width: 100%;
+}
+
+.dqarFG {
+    float: left;
+    padding-right: 1.04167%;
+    padding-left: 1.04167%;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.fnpSre {
+    -webkit-font-smoothing: antialiased;
+    line-height: 2.2;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(74, 78, 92);
+}
+
+.hIWgEu {
+    -webkit-font-smoothing: antialiased;
+    line-height: 2.2;
+    font-size: 0.8em;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+}

@@ -1,0 +1,12 @@
+/* Header Bottom Section Styles */
+.header__bottom {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 150px; /* Account for fixed header top */
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
