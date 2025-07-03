@@ -488,18 +488,6 @@ a {
   z-index: 99999;
 }
 
-/* Remove shadow/background hover effects for language/currency selectors */
-.headerA__nav-menu-sub .nav-submenu-link:hover {
-  background: none !important;
-  box-shadow: none !important;
-  text-decoration: none;
-}
-
-.headerA__nav-menu-sub .nav-submenu-link:hover .nav-submenu-icon {
-  background: none !important;
-  box-shadow: none !important;
-}
-
 /* === DROPDOWN MENU (Latest Offers) === */
 .nav-menu-with-dropdown {
   position: relative;
