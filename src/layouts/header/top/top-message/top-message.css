@@ -23,7 +23,7 @@
 
 .top-message__link:hover {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .top-message__content {

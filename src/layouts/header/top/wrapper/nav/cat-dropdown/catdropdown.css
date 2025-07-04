@@ -1,0 +1,393 @@
+/* ========================================
+   Category Dropdown Styles
+   ======================================== */
+
+/* Font Face Import */
+@font-face {
+    font-family: "nine1";
+    src: url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.eot?t=1730856876187');
+    src: url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.eot?t=1730856876187#iefix') format('embedded-opentype'),
+         url("https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.woff2?t=1730856876187") format("woff2"),
+         url("https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.woff?t=1730856876187") format("woff"),
+         url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.ttf?t=1730856876187') format('truetype'),
+         url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.svg?t=1730856876187#nine1') format('svg');
+    font-display: swap;
+}
+
+/* ========================================
+   Reset Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+div, a, img, i, ul, li {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* ========================================
+   Icon Styles
+   ======================================== */
+.ico {
+    font-family: "nine1" !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}
+
+.ico-chevron-right:before {
+    content: "\ea14";
+}
+
+.ico-close:before {
+    content: "\ea17";
+}
+
+/* ========================================
+   Navigation Menu Base Styles
+   ======================================== */
+.nav-menu .nav-menu-item {
+    position: relative;
+}
+
+.nav-menu .category-multi-level-menu {
+    position: static;
+}
+
+.nav-menu .category-multi-level-menu > .nav-menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .ico-close {
+    padding: 2px;
+}
+
+.headerA__nav-menu .nav-menu-item {
+    float: left;
+    padding: 0 12px;
+}
+
+/* ========================================
+   Category Text Styles
+   ======================================== */
+.category-label {
+    font-weight: normal;
+    display: inline-block;
+    color: rgb(51, 51, 51);
+}
+
+/* ========================================
+   Dropdown Container
+   ======================================== */
+.dropdown-container {
+    width: 1180px;
+    height: 616px;
+    overflow: hidden auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 4px 4px);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    z-index: 650;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+}
+
+/* ========================================
+   Category Columns
+   ======================================== */
+.category-list {
+    width: 250px;
+    height: 576px;
+    overflow: hidden overlay;
+}
+
+.subcategories-list {
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 0px;
+}
+
+/* Scrollbar styles for category columns */
+.category-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.category-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(136, 136, 136);
+}
+
+.category-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85);
+}
+
+/* ========================================
+   Category List Items
+   ======================================== */
+/* Category Items */
+.category-item {
+    height: 35px;
+    padding: 7.5px 10px 7.5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+.category-item:hover {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    background-color: rgb(244, 244, 244);
+    text-decoration: none;
+    cursor: unset;
+}
+
+/* Active Category Items */
+.category-item.active {
+    height: 35px;
+    padding: 7.5px 10px 7.5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: rgb(244, 244, 244);
+    font-weight: bold;
+}
+
+.category-item.active:hover {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    background-color: rgb(244, 244, 244);
+    text-decoration: none;
+    cursor: unset;
+}
+
+/* ========================================
+   Category Links
+   ======================================== */
+.category-link {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: inherit;
+    font-weight: unset;
+}
+.category-link:hover {
+    text-decoration: none;
+}
+/* ========================================
+   Category Text Content
+   ======================================== */
+.category-text {
+    line-height: 40px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+    height: 35px;
+    margin-right: 10px;
+    word-break: keep-all;
+    font-size: 13px;
+    font-weight: unset;
+}
+
+.category-text:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ========================================
+   Product Details Section
+   ======================================== */
+.product-details-section {
+    width: 440px;
+    padding-left: 20px;
+    position: relative;
+    border-left: 1px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+    line-height: 0px;
+}
+
+.section-content {
+    display: flex;
+}
+
+.product-list-container {
+    width: 220px;
+}
+
+/* Product List */
+.product-list {
+    width: 200px;
+    display: inline-block;
+    margin-right: 20px;
+    overflow: hidden auto;
+    vertical-align: top;
+}
+
+.product-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(136, 136, 136);
+}
+
+.product-list::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85);
+}
+
+/* Product Items */
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 16px 0px;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+
+.product-item:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.product-text {
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+    height: auto;
+    margin-right: 10px;
+    word-break: keep-all;
+    font-size: 13px;
+    font-weight: unset;
+}
+
+.product-text:hover {
+    font-weight: bold;
+}
+
+.product-link {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: inherit;
+    font-weight: unset;
+}
+
+/* Section Headers */
+.section-header {
+    margin: 0px ;
+    max-width: 90%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.section-title {
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 8px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.section-title:hover {
+    text-decoration: none;
+}
+
+/* ========================================
+   Recommended Brands Section
+   ======================================== */
+.recommended-brands-section {
+    width: 240px;
+    padding-left: 24px;
+    line-height: 0px;
+    position: absolute;
+    right: 0px;
+    height: 576px;
+    border-left: 1px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+}
+
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px -6px -6px;
+    line-height: initial;
+    max-height: 546px;
+    overflow: hidden scroll;
+}
+
+.brands-grid::-webkit-scrollbar {
+    width: 5px;
+}
+
+.brands-grid::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(136, 136, 136);
+}
+
+.brands-grid::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85);
+}
+
+/* Brand Links */
+.brand-link {
+    width: 55px;
+    height: 55px;
+    margin: 6px;
+    display: block;
+}
+
+/* Brand Images */
+.brand-image {
+    border-radius: 4px;
+    width: 100%;
+}

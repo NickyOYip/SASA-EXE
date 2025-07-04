@@ -1,4 +1,5 @@
 /* Navigation Component Styles */
+@import './cat-dropdown/cat-dropdown.css';
 
 /* === RESET STYLES === */
 * {
@@ -150,10 +151,13 @@ a {
   vertical-align: text-top;
 }
 
-.nav-menu .nav-menu-title {
-  font-weight: normal;
+.headerA__nav-menu .nav-menu-title {
+  font-size: 16px !important;
   display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 .nav-menu .ico-chevron-down {
   padding: 2px;
@@ -374,6 +378,10 @@ a {
 /* === LANGUAGE/CURRENCY SELECTOR === */
 .nav-selector-text {
   display: inline-block;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 /* Prevent underline on hover for selector text */

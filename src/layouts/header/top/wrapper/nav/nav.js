@@ -1,4 +1,6 @@
 // Navigation Component
+import { CategoryDropdownHandler } from './cat-dropdown/cat-dropdown.js';
+
 export class Nav {
   constructor() {
     this.element = null;
@@ -7,6 +9,7 @@ export class Nav {
 
   init() {
     this.createElement();
+    this.initCategoryDropdown();
   }
 
   createElement() {
@@ -352,6 +355,16 @@ export class Nav {
         </span>
       </div>
     `;
+
+    // Initialize category dropdown functionality after DOM is created
+    this.initCategoryDropdown();
+  }
+
+  initCategoryDropdown() {
+    const categoryElement = this.element.querySelector('.shop-category-multi-level-menu-li');
+    if (categoryElement) {
+      this.categoryDropdown = new CategoryDropdownHandler(categoryElement);
+    }
   }
 
   render() {
