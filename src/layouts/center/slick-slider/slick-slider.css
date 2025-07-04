@@ -1,0 +1,157 @@
+/*! CSS Used from: https://cms.cdn.91app.hk/lib/cms-theme-core/3.68.6/css/desktop.default.css?v=3.68.6 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+div,
+a,
+img {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.slick-list {
+  position: relative;
+  overflow-x: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.image-banner__picture {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*! CSS Used from: Embedded */
+.hrRWgs {
+  background-color: rgb(255, 255, 255);
+  background-image: unset;
+  background-position: center center;
+  background-size: cover;
+  padding: 7.5px calc(50% - 590px);
+}
+
+.cRqNpp {
+  max-width: 1180px;
+  margin: 0px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+  border-radius: 6px;
+  padding: 6px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.eXtGzk {
+  position: relative;
+  max-width: 218px;
+  margin: 0px auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.eXtGzk .image-banner {
+  width: 60px;
+  cursor: pointer;
+}
+
+.goKblT {
+  margin: 6px auto;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  width: 80px;
+  height: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.bQmEoD {
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 6px;
+}

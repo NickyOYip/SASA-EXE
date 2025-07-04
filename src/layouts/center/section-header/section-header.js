@@ -13,7 +13,7 @@ export class SectionHeader {
     this.element = document.createElement('div');
     this.element.className = 'section-header';
     this.element.innerHTML = `
-      <h2>Section Title</h2>
+      
     `;
   }
 

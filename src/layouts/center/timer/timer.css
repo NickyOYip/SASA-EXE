@@ -1,0 +1,88 @@
+/*! CSS Used from: https://cms.cdn.91app.hk/lib/cms-theme-core/3.68.6/css/desktop.default.css?v=3.68.6 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+div,
+span,
+h1 {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer__block {
+  position: relative;
+  margin: 0 3px;
+  padding: 0 10px 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.timer__block--head-border {
+  position: relative;
+  z-index: 2;
+  height: 5px;
+}
+
+.timer__digits {
+  font-size: 28px;
+  position: relative;
+  z-index: 1;
+  padding-top: 10px;
+}
+
+.timer__digits__digit {
+  display: inline-block;
+}
+
+.timer__digits__prepared-digit {
+  position: absolute;
+  display: inline-block;
+  transform: translate3d(0, -20px, 0);
+  opacity: 0;
+}
+
+.timer__digits__prepared-digit:nth-child(2) {
+  transform: translateX(100%);
+}
+
+/*! CSS Used from: Embedded */
+.hrRWgs {
+  background-color: rgb(255, 255, 255);
+  background-image: unset;
+  background-position: center center;
+  background-size: cover;
+  padding: 7.5px calc(50% - 590px);
+}
+
+.kVcmsV {
+  position: relative;
+  min-height: 20px;
+  padding: 16px 0px 32px;
+}
+
+.cUNIuX {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  word-break: break-all;
+  color: rgb(228, 0, 127);
+}

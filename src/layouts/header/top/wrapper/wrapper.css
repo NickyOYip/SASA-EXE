@@ -16,7 +16,6 @@
 
 .logo-container {
   box-sizing: border-box;
-  padding: 20px 0 15px 0;
   flex-shrink: 0;
   overflow: visible;
   display: flex;
