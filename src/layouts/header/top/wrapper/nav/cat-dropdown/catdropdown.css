@@ -110,7 +110,7 @@ a {
     width: 1180px;
     height: 616px;
     overflow: hidden auto;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translate(-50%, 0px);
     border: 0px;

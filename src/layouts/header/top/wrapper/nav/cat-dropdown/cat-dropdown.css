@@ -24,12 +24,23 @@
 
 /* Ensure the dropdown content uses the original styles */
 .category-dropdown-container .dropdown-container {
-    position: static !important;
+    position: fixed !important;
     transform: none !important;
-    left: auto !important;
+    top: 134px !important;
+    left: calc( 100%/2 - 1180px/2  ) !important;
+    
+
     height: auto !important;
     box-shadow: none !important;
     border: none !important;
-    padding: 0 !important;
+    padding: 20px 0 !important;
     margin: 0 !important;
+}
+
+@media (max-width: 1000px) {
+    .category-dropdown-container .dropdown-container {
+        /* Styles only apply on screens 1000px+ */
+        left: 50px !important;
+        right: 50px !important;
+    }
 }

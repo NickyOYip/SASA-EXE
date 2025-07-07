@@ -34,19 +34,37 @@ export class Slider {
     // Previous button
     const prevBtn = document.createElement('button');
     prevBtn.className = 'slick-prev slick-arrow';
-    prevBtn.innerHTML = '<i class="ico ico-chevron-left"></i>';
+    prevBtn.innerHTML = '<i class="ico ico-chevron-left" style="font-size: 24px;line-height: 50px;"></i>';
     prevBtn.setAttribute('aria-label', 'Previous slide');
-    
+    prevBtn.style.position = 'absolute';
+    prevBtn.style.left = '10px';
+    prevBtn.style.top = '50%';
+    prevBtn.style.transform = 'translateY(-50%)';
+    prevBtn.style.zIndex = '10';
+    prevBtn.style.background = 'rgba(255, 255, 255, 0.85)';
+    prevBtn.style.border = 'none';
+    prevBtn.style.color = 'white';
+    prevBtn.style.padding = '10px';
+    prevBtn.style.borderRadius = '50%';
+    prevBtn.style.cursor = 'pointer';
+    prevBtn.style.width = '50px';
+    prevBtn.style.height = '50px';
+    prevBtn.style.display = 'flex';
+    prevBtn.style.alignItems = 'center';
+    prevBtn.style.justifyContent = 'center';
+
     // Slider list container
     const slickList = document.createElement('div');
     slickList.className = 'slick-list';
+    slickList.style.position = 'relative';
+    slickList.style.overflow = 'hidden';
     
     // Slider track
     this.track = document.createElement('div');
     this.track.className = 'slick-track';
     this.track.style.width = `${this.data.slides.length * 100}%`;
     this.track.style.opacity = '1';
-    this.track.style.transition = 'transform 1000ms ease';
+    this.track.style.transition = 'transform 1500ms ease';
     this.track.style.display = 'flex';
 
     
@@ -63,15 +81,40 @@ export class Slider {
     nextBtn.className = 'slick-next slick-arrow';
     nextBtn.innerHTML = '<i class="ico ico-chevron-right"></i>';
     nextBtn.setAttribute('aria-label', 'Next slide');
+    nextBtn.style.position = 'absolute';
+    nextBtn.style.right = '10px';
+    nextBtn.style.top = '50%';
+    nextBtn.style.transform = 'translateY(-50%)';
+    nextBtn.style.zIndex = '10';
+    nextBtn.style.background = 'rgb(255, 255, 255, 0.85)';
+    nextBtn.style.border = 'none';
+    nextBtn.style.color = 'white';
+    nextBtn.style.padding = '10px';
+    nextBtn.style.borderRadius = '50%';
+    nextBtn.style.cursor = 'pointer';
+    nextBtn.style.width = '50px';
+    nextBtn.style.height = '50px';
+    nextBtn.style.display = 'flex';
+    nextBtn.style.alignItems = 'center';
+    nextBtn.style.justifyContent = 'center';
     
     // Dots/pagination
     const dotsContainer = this.createDots();
+    dotsContainer.style.position = 'absolute';
+    dotsContainer.style.bottom = '20px';
+    dotsContainer.style.left = '50%';
+    dotsContainer.style.transform = 'translateX(-50%)';
+    dotsContainer.style.zIndex = '10';
+    dotsContainer.style.margin = '0';
+    dotsContainer.style.padding = '0';
     
     // Assemble the slider
-    slickContainer.appendChild(prevBtn);
+    slickList.appendChild(this.track);
+    slickList.appendChild(prevBtn);
+    slickList.appendChild(nextBtn);
+    slickList.appendChild(dotsContainer);
+    
     slickContainer.appendChild(slickList);
-    slickContainer.appendChild(nextBtn);
-    slickContainer.appendChild(dotsContainer);
     
     container.appendChild(slickContainer);
     this.element.appendChild(container);
