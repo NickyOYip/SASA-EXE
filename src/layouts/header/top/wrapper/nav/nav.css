@@ -224,10 +224,12 @@ a {
 }
 
 .download-app-menu .download-app-menu-link:first-child i {
+  height: 38px;
   width: 117px;
 }
 
 .download-app-menu .download-app-menu-link:last-child i {
+  height: 38px;
   width: 105px;
 }
 
@@ -250,7 +252,7 @@ a {
 }
 
 .qr-code-image {
-  height: 140px;
+  height: 145px;
   padding-bottom: 5px;
 }
 

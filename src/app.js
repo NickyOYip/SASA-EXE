@@ -14,6 +14,7 @@ import './layouts/center/image-banner/image-banner.css';
 import './layouts/center/brand-wrapper/brand-wrapper.css';
 import './layouts/center/section-header/section-header.css';
 import './layouts/center/timer/timer.css';
+import './layouts/center/slider-track/slider-track.css';
 import './layouts/center/product-container-wrapper/product-container-wrapper.css';
 import './layouts/footer/footer.css';
 import './components/easychat/easychat.css';
