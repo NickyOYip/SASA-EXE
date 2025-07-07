@@ -1,0 +1,136 @@
+{
+  "sliderData": {
+    "settings": {
+      "autoPlay": true,
+      "autoPlayInterval": 5000,
+      "showDots": true,
+      "showArrows": true,
+      "infinite": true,
+      "slidesToShow": 1,
+      "slidesToScroll": 1
+    },
+    "slides": [
+      {
+        "id": 0,
+        "title": "Face Masks Collection",
+        "alt": "Mask",
+        "href": "//www.sasa.com.hk/page/Mask",
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751599427-p90h7a7v4b_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751599427-p90h7a7v4b_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      },
+      {
+        "id": 1,
+        "title": "SK20 Collection",
+        "alt": "HeaderA-carousel-2",
+        "href": "//www.sasa.com.hk/page/SK20",
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1749295828-nfssg4yysx_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1749295828-nfssg4yysx_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "Yutakanaseikatsu Brand",
+        "alt": "HeaderA-carousel-3",
+        "href": "//www.sasa.com.hk/V2/Brand/yutakanaseikatsu",
+        "isActive": true,
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751598740-cbfx07l7z4_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751598740-cbfx07l7z4_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "title": "VT Cosmetics",
+        "alt": "HeaderA-carousel-4",
+        "href": "//www.sasa.com.hk/page/VT",
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751274660-teehyfbzli_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751274660-teehyfbzli_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "title": "Eoyunggam Collection",
+        "alt": "HeaderA-carousel-5",
+        "href": "//www.sasa.com.hk/page/Eoyunggam",
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751529104-qq0uh6s3a3_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751529104-qq0uh6s3a3_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "title": "Maybelline Collection",
+        "alt": "HeaderA-carousel-6",
+        "href": "//www.sasa.com.hk/page/Maybelline",
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1746176356-062zfncvus_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1746176356-062zfncvus_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "title": "Cobolife Brand",
+        "alt": "HeaderA-carousel-7",
+        "href": "//www.sasa.com.hk/page/Cobolife",
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751281390-iv6w26co61_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751281390-iv6w26co61_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "title": "Fragrance Collection",
+        "alt": "FragrancePIP_Promo1_EN",
+        "href": "//www.sasa.com.hk/page/PIPFragrance",
+        "image": {
+          "src": "https://cms.cdn.91app.hk/images/compress/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1722823531-fvnk6n29be_d_1280x427.webp",
+          "srcset": [
+            {
+              "url": "https://cms.cdn.91app.hk/images/compress/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1722823531-fvnk6n29be_d_1280x427.webp",
+              "width": "1280w"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

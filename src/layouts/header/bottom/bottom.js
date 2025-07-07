@@ -1,5 +1,5 @@
 // Header Bottom Component
-import { Slider } from './slider/slider.js';
+import { Slider } from './slider/slider-new.js';
 
 // Import component styles
 import './slider/slider.css';
