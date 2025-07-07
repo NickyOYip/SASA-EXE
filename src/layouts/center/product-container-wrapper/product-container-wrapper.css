@@ -318,3 +318,7 @@ a {
   src: url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.eot?t=1730856876187#iefix') format('embedded-opentype'), url("https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.woff2?t=1730856876187") format("woff2"), url("https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.woff?t=1730856876187") format("woff"), url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.ttf?t=1730856876187') format('truetype'), url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.svg?t=1730856876187#nine1') format('svg');
   font-display: swap;
 }
+
+.product-list-container{
+  width: 100%;
+}
