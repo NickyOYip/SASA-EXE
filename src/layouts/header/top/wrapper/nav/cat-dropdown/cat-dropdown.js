@@ -75,6 +75,7 @@ export class CategoryDropdownHandler {
         this.categoryElement.addEventListener('mouseenter', () => {
             this.clearHoverTimeout();
             this.showDropdown();
+            
         });
 
         this.categoryElement.addEventListener('mouseleave', () => {
@@ -114,6 +115,13 @@ export class CategoryDropdownHandler {
             
             // Add active class to category element
             this.categoryElement.classList.add('dropdown-active');
+            
+            // Update chevron icon to cross
+            const chevronIcon = this.categoryElement.querySelector('.ico-chevron-down');
+            if (chevronIcon) {
+                chevronIcon.classList.remove('ico-chevron-down');
+                chevronIcon.classList.add('ico-close'); // or 'ico-times', 'ico-close' depending on your icon class
+            }
         }
     }
 
@@ -124,6 +132,13 @@ export class CategoryDropdownHandler {
             
             // Remove active class from category element
             this.categoryElement.classList.remove('dropdown-active');
+            
+            // Restore chevron icon
+            const crossIcon = this.categoryElement.querySelector('.ico-close');
+            if (crossIcon) {
+                crossIcon.classList.remove('ico-close');
+                crossIcon.classList.add('ico-chevron-down');
+            }
         }
     }
 
