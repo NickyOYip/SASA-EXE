@@ -4,7 +4,9 @@ import sliderData from './data/slider-data.json' assert { type: 'json' };
 export class Slider {
   constructor(options = {}) {
     this.data = options.data || sliderData.sliderData;
-    this.currentSlide = 0;
+    // Find the active slide from data, default to 0 if none found
+    const activeIndex = this.data.slides.findIndex(slide => slide.isActive);
+    this.currentSlide = activeIndex !== -1 ? activeIndex : 0;
     this.element = null;
     this.track = null;
     this.dots = [];
@@ -15,6 +17,8 @@ export class Slider {
   init() {
     this.createElement();
     this.setupEventListeners();
+    // Set initial position
+    this.updateSlider();
     if (this.data.settings.autoPlay) {
       this.startAutoPlay();
     }
@@ -229,7 +233,7 @@ export class Slider {
   }
   
   updateSlider() {
-    const translateX = -this.currentSlide * 100/8;
+    const translateX = -this.currentSlide * (100 / this.data.slides.length);
     this.track.style.transform = `translateX(${translateX}%)`;
     
     // Update active slide classes
