@@ -41,10 +41,10 @@ export class CarouselContainer {
 
   createElement() {
     this.element = document.createElement('div');
-    this.element.className = 'carousel-container';
+    this.element.className = 'carousel-container-center';
     this.element.innerHTML = `
-      <div class="carousel-container">
-        <div class="slick-slider carousel-container--content slick-initialized" dir="ltr">
+      <div class="carousel-container-center">
+        <div class="slick-slider carousel-container-center--content slick-initialized" dir="ltr">
           ${this.renderArrows()}
           <div class="slick-list">
             <div class="slick-track" style="opacity: 1;">

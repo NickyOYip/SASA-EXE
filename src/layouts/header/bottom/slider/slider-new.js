@@ -25,10 +25,10 @@ export class Slider {
     this.element.className = 'slider sasa-slider';
     
     const container = document.createElement('div');
-    container.className = 'carousel-container';
+    container.className = 'carousel-container-header';
     
     const slickContainer = document.createElement('div');
-    slickContainer.className = 'slick-slider carousel-container--content slick-initialized';
+    slickContainer.className = 'slick-slider carousel-container-header--content slick-initialized';
     slickContainer.dir = 'ltr';
     
     // Previous button

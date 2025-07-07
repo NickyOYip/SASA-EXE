@@ -13,8 +13,8 @@ export class Slider {
     this.element = document.createElement('div');
     this.element.className = 'slider';
     this.element.innerHTML = `
-      <div class="carousel-container">
-    <div class="slick-slider carousel-container--content slick-initialized" dir="ltr"><a
+      <div class="carousel-container-header">
+    <div class="slick-slider carousel-container-header--content slick-initialized" dir="ltr"><a
             class="sc-hilkcu sc-bQuRqn hRrlxJ eMKquP"><i class="ico ico-chevron-left"></i></a>
         <div class="slick-list">
             <div class="slick-track"

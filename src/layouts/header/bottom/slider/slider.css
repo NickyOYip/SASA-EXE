@@ -203,37 +203,37 @@ button {
   -webkit-appearance: none;
 }
 
-.carousel-container {
+.carousel-container-header {
   position: relative;
   width: 100%;
 }
 
-.carousel-container--content {
+.carousel-container-header--content {
   margin-right: auto;
   margin-left: auto;
 }
 
-.carousel-container--content .slick-slide>div {
+.carousel-container-header--content .slick-slide>div {
   display: flex;
   align-content: center;
 }
 
-.carousel-container .slick-dots {
+.carousel-container-header .slick-dots {
   bottom: 10px;
 }
 
-.carousel-container .slick-dots li button:before {
+.carousel-container-header .slick-dots li button:before {
   font-size: 30px;
   opacity: 1;
   color: #d8d8d8;
 }
 
-.carousel-container .slick-dots .slick-active button:before {
+.carousel-container-header .slick-dots .slick-active button:before {
   color: #4a4e5c;
 }
 
-.carousel-container .ico-chevron-left,
-.carousel-container .ico-chevron-right {
+.carousel-container-header .ico-chevron-left,
+.carousel-container-header .ico-chevron-right {
   font-size: 24px;
   line-height: 50px;
   vertical-align: middle;
@@ -334,4 +334,28 @@ button {
   src: url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.eot?t=1730856876187');
   src: url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.eot?t=1730856876187#iefix') format('embedded-opentype'), url("https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.woff2?t=1730856876187") format("woff2"), url("https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.woff?t=1730856876187") format("woff"), url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.ttf?t=1730856876187') format('truetype'), url('https://cms.cdn.91app.hk/cms/common/iconFonts/v1.1.13/nine1/nine1.svg?t=1730856876187#nine1') format('svg');
   font-display: swap;
+}
+
+/* Header carousel container - full width styles */
+.carousel-container-header {
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container-header .slick-slider {
+  width: 100% !important;
+}
+
+.carousel-container-header .slick-list {
+  width: 100% !important;
+}
+
+.carousel-container-header .slick-track {
+  width: 100% !important;
+}
+
+.carousel-container-header .slick-slide {
+  width: 100vw !important;
 }

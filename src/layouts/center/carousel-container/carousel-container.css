@@ -202,37 +202,37 @@ button {
   -webkit-appearance: none;
 }
 
-.carousel-container {
+.carousel-container-center {
   position: relative;
   width: 100%;
 }
 
-.carousel-container--content {
+.carousel-container-center--content {
   margin-right: auto;
   margin-left: auto;
 }
 
-.carousel-container--content .slick-slide>div {
+.carousel-container-center--content .slick-slide>div {
   display: flex;
   align-content: center;
 }
 
-.carousel-container .slick-dots {
+.carousel-container-center .slick-dots {
   bottom: 10px;
 }
 
-.carousel-container .slick-dots li button:before {
+.carousel-container-center .slick-dots li button:before {
   font-size: 30px;
   opacity: 1;
   color: #d8d8d8;
 }
 
-.carousel-container .slick-dots .slick-active button:before {
+.carousel-container-center .slick-dots .slick-active button:before {
   color: #4a4e5c;
 }
 
-.carousel-container .ico-chevron-left,
-.carousel-container .ico-chevron-right {
+.carousel-container-center .ico-chevron-left,
+.carousel-container-center .ico-chevron-right {
   font-size: 24px;
   line-height: 50px;
   vertical-align: middle;
