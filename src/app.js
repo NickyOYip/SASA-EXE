@@ -17,6 +17,7 @@ import './layouts/center/timer/timer.css';
 import './layouts/center/product-container-wrapper/product-container-wrapper.css';
 import './layouts/footer/footer.css';
 import './components/easychat/easychat.css';
+import './components/qrcode/qrcode.css';
 
 export class App {
   constructor() {

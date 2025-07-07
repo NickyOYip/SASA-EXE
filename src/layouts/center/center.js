@@ -33,20 +33,27 @@ export class Center {
     this.columnGridContainer3 = new ColumnGridContainer();
     this.columnGridContainer4 = new ColumnGridContainer();
 
-    // Create image banner instances
-    this.imageBanner1 = new ImageBanner();
-    this.imageBanner2 = new ImageBanner();
-    this.imageBanner3 = new ImageBanner();
+    // Create image banner instances with custom options
+    this.imageBanner1 = new ImageBanner({
+      link: "//www.sasa.com.hk/page/SpecialOffers",
+      imageUrl: "https://cms.cdn.91app.hk/images/original/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1734945050-q5dhgglxik_d_1280x220_1124x193_800x138_600x103_400x69.jpg",
+      alt: "Special Offers Banner"
+    });
+    this.imageBanner2 = new ImageBanner({
+      link: "//www.sasa.com.hk/page/NewArrivals",
+      imageUrl: "https://cms.cdn.91app.hk/images/original/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751006403-f7wbj3ziye_d_1280x130_1124x114_800x81_600x61_400x41.jpg",
+      alt: "New Arrivals Banner"
+    });
+    this.imageBanner3 = new ImageBanner({
+      link: "//www.sasa.com.hk/page/BestSellers",
+      alt: "Best Sellers Banner"
+    });
+    // Use default options for remaining banners
     this.imageBanner4 = new ImageBanner();
     this.imageBanner5 = new ImageBanner();
     this.imageBanner6 = new ImageBanner();
     this.imageBanner7 = new ImageBanner();
-    this.imageBanner8 = new ImageBanner();
-    this.imageBanner9 = new ImageBanner();
-    this.imageBanner10 = new ImageBanner();
-    this.imageBanner11 = new ImageBanner();
-    this.imageBanner12 = new ImageBanner();
-    this.imageBanner13 = new ImageBanner();
+
 
     // Create brand wrapper instances
     this.brandWrapper1 = new BrandWrapper();
@@ -113,22 +120,16 @@ export class Center {
     this.element.appendChild(this.imageBanner5.render());
     this.element.appendChild(this.imageBanner6.render());
     this.element.appendChild(this.imageBanner7.render());
-    this.element.appendChild(this.imageBanner8.render());
-    this.element.appendChild(this.imageBanner9.render());
-    this.element.appendChild(this.imageBanner10.render());
-    this.element.appendChild(this.imageBanner11.render());
     
     
     this.element.appendChild(this.brandWrapper1.render());
     
-    this.element.appendChild(this.imageBanner12.render());
     
     this.element.appendChild(this.brandWrapper2.render());
     
     this.element.appendChild(this.brandWrapper3.render());
     
     this.element.appendChild(this.columnGridContainer4.render());
-    this.element.appendChild(this.imageBanner13.render());
   }
 
   render() {

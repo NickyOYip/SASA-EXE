@@ -1,9 +1,14 @@
 // Navigation Component
 import { CategoryDropdownHandler } from './cat-dropdown/cat-dropdown.js';
+import { QRCodeComponent } from '../../../../../components/qrcode/qrcode.js';
 
 export class Nav {
   constructor() {
     this.element = null;
+    this.qrCodeApp = new QRCodeComponent({
+      data: 'https://play.google.com/store/apps/details?id=hk.com.nineyi.shop.s000017',
+      size: 128
+    });
     this.init();
   }
 
@@ -358,12 +363,29 @@ export class Nav {
 
     // Initialize category dropdown functionality after DOM is created
     this.initCategoryDropdown();
+    
+    // Replace canvas with QR code component
+    this.initQRCode();
   }
 
   initCategoryDropdown() {
     const categoryElement = this.element.querySelector('.shop-category-multi-level-menu-li');
     if (categoryElement) {
       this.categoryDropdown = new CategoryDropdownHandler(categoryElement);
+    }
+  }
+
+  initQRCode() {
+    const qrContainer = this.element.querySelector('.qr-code-image');
+    if (qrContainer) {
+      // Remove existing canvas
+      const existingCanvas = qrContainer.querySelector('canvas');
+      if (existingCanvas) {
+        existingCanvas.remove();
+      }
+      
+      // Add QR code component
+      qrContainer.appendChild(this.qrCodeApp.render());
     }
   }
 
