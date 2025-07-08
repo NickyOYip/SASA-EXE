@@ -17,9 +17,9 @@ export class SlickSlider {
     <div class="sc-hIQuri cRqNpp">
         <div class="slick-slider slick-initialized">
             <div class="slick-list">
-                <div class="slick-track" style="width: 1073px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                <div class="slick-track" style="max-width: 1280px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
                     <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false"
-                        style="outline: none; width: 1073px;">
+                        style="outline: none; max-width: 1280px;width: 100%;">
                         <div>
                             <div tabindex="-1" style="width: 100%; display: inline-block;">
                                 <div class="sc-dAfKBC bQmEoD">
