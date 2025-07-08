@@ -31,7 +31,6 @@
 .carousel-container-center {
   width: 100vw;
   min-width: 1280px;
-  margin-left: calc(-50vw + 50%);
   overflow: hidden;
   position: relative;
 }
