@@ -1,13 +1,7 @@
 // Official App Footer Component
-import { QRCodeComponent } from '../../../../components/qrcode/qrcode.js';
-
 export class OfficialApp {
   constructor() {
     this.element = null;
-    this.qrCodeApp = new QRCodeComponent({
-      data: 'https://www.sasa.com.hk/app',
-      size: 128
-    });
     this.init();
   }
 
@@ -39,23 +33,6 @@ export class OfficialApp {
           </div>
         </div>
     `;
-    
-    // Replace canvas with QR code component
-    this.initQRCode();
-  }
-
-  initQRCode() {
-    const qrContainer = this.element.querySelector('.qr-code-image');
-    if (qrContainer) {
-      // Remove existing canvas
-      const existingCanvas = qrContainer.querySelector('canvas');
-      if (existingCanvas) {
-        existingCanvas.remove();
-      }
-      
-      // Add QR code component
-      qrContainer.appendChild(this.qrCodeApp.render());
-    }
   }
 
   render() {

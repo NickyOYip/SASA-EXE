@@ -1,4 +1,19 @@
-<div class="sc-hIVHpd hrRWgs">
+// Brand Wrapper Component
+export class Banner {
+  constructor() {
+    this.element = null;
+    this.init();
+  }
+
+  init() {
+    this.createElement();
+  }
+
+  createElement() {
+    this.element = document.createElement('div');
+    this.element.className = 'banner';
+    this.element.innerHTML = `
+      <div class="sc-hIVHpd hrRWgs">
     <div class="column-grid-container">
         <div class="column-grid-container__wrapper">
             <ul class="column-grid-container__content">
@@ -38,3 +53,10 @@
         </div>
     </div>
 </div>
+    `;
+  }
+
+  render() {
+    return this.element;
+  }
+}

@@ -9,16 +9,11 @@ import './layouts/header/header.css';
 import './layouts/center/center.css';
 import './layouts/center/slick-slider/slick-slider.css';
 import './layouts/center/carousel-container/carousel-container.css';
-import './layouts/center/column-grid-container/column-grid-container.css';
-import './layouts/center/image-banner/image-banner.css';
-import './layouts/center/brand-wrapper/brand-wrapper.css';
 import './layouts/center/section-header/section-header.css';
 import './layouts/center/timer/timer.css';
-import './layouts/center/slider-track/slider-track.css';
 import './layouts/center/product-container-wrapper/product-container-wrapper.css';
 import './layouts/footer/footer.css';
 import './components/easychat/easychat.css';
-import './components/qrcode/qrcode.css';
 
 export class App {
   constructor() {

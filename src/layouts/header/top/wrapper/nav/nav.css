@@ -115,6 +115,7 @@ a {
   text-decoration: none;
 }
 
+
 .headerA__nav-menu .shop-category-multi-level-menu-li {
   position: static;
 }
@@ -636,6 +637,14 @@ a {
   line-height: 1;
 }
 
+
+.nav-menu-title.ico-chevron-down:hover {
+  text-decoration: none !important;
+}
+
+.ico-chevron-down:before:hover {
+  text-decoration: none !important;
+}
 .ico-chevron-down:before {
   content: "\ea12";
 }

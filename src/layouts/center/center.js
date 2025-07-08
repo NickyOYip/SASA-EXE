@@ -4,9 +4,7 @@ import { CarouselContainer } from './carousel-container/carousel-container.js';
 import { SectionHeader } from './section-header/section-header.js';
 import { Timer } from './timer/timer.js';
 import { ProductContainerWrapper } from './product-container-wrapper/product-container-wrapper.js';
-import { ColumnGridContainer } from './column-grid-container/column-grid-container.js';
-import { ImageBanner } from './image-banner/image-banner.js';
-import { BrandWrapper } from './brand-wrapper/brand-wrapper.js';
+import { Banner } from './banner/banner.js';
 
 export class Center {
   constructor() {
@@ -18,7 +16,10 @@ export class Center {
     this.sectionHeader2 = new SectionHeader();
     this.sectionHeader3 = new SectionHeader();
     this.sectionHeader4 = new SectionHeader();
-    this.timer = new Timer();
+    this.timer1 = new Timer();
+    this.timer2 = new Timer();
+    this.banner = new Banner();
+
     // Create multiple product container instances
     this.productContainer1 = new ProductContainerWrapper();
     this.productContainer2 = new ProductContainerWrapper();
@@ -27,39 +28,17 @@ export class Center {
     this.productContainer5 = new ProductContainerWrapper();
     this.productContainer6 = new ProductContainerWrapper();
     this.productContainer7 = new ProductContainerWrapper();
-
-    this.columnGridContainer1 = new ColumnGridContainer();
-    this.columnGridContainer2 = new ColumnGridContainer();
-    this.columnGridContainer3 = new ColumnGridContainer();
-    this.columnGridContainer4 = new ColumnGridContainer();
-
-    // Create image banner instances with custom options
-    this.imageBanner1 = new ImageBanner({
-      link: "//www.sasa.com.hk/page/SpecialOffers",
-      imageUrl: "https://cms.cdn.91app.hk/images/original/17/133e7f2c-0ea9-4590-ad9f-3b52528aa4ff-1734945050-q5dhgglxik_d_1280x220_1124x193_800x138_600x103_400x69.jpg",
-      alt: "Special Offers Banner"
-    });
-    this.imageBanner2 = new ImageBanner({
-      link: "//www.sasa.com.hk/page/NewArrivals",
-      imageUrl: "https://cms.cdn.91app.hk/images/original/17/d2a6aaf2-0ff8-47be-9849-aeb8eb4b2f03-1751006403-f7wbj3ziye_d_1280x130_1124x114_800x81_600x61_400x41.jpg",
-      alt: "New Arrivals Banner"
-    });
-    this.imageBanner3 = new ImageBanner({
-      link: "//www.sasa.com.hk/page/BestSellers",
-      alt: "Best Sellers Banner"
-    });
-    // Use default options for remaining banners
-    this.imageBanner4 = new ImageBanner();
-    this.imageBanner5 = new ImageBanner();
-    this.imageBanner6 = new ImageBanner();
-    this.imageBanner7 = new ImageBanner();
-
-
-    // Create brand wrapper instances
-    this.brandWrapper1 = new BrandWrapper();
-    this.brandWrapper2 = new BrandWrapper();
-    this.brandWrapper3 = new BrandWrapper();
-
+    this.productContainer8 = new ProductContainerWrapper();
+    this.productContainer9 = new ProductContainerWrapper();
+    this.productContainer10 = new ProductContainerWrapper();
+    this.productContainer11 = new ProductContainerWrapper();
+    this.productContainer12 = new ProductContainerWrapper();
+    this.productContainer13 = new ProductContainerWrapper();
+    this.productContainer14 = new ProductContainerWrapper();
+    this.productContainer15 = new ProductContainerWrapper();
+    this.productContainer16 = new ProductContainerWrapper();
+    this.productContainer17 = new ProductContainerWrapper();
+    this.productContainer18 = new ProductContainerWrapper();
     this.init();
   }
 
@@ -74,6 +53,8 @@ export class Center {
     // Add the actual SlickSlider component
     this.element.appendChild(this.slickSlider.render());
     
+
+    
     // Add carousel containers
     this.element.appendChild(this.carouselContainer1.render());
     this.element.appendChild(this.carouselContainer2.render());
@@ -82,8 +63,14 @@ export class Center {
     this.element.appendChild(this.sectionHeader1.render());
     
     // Add timer component
-    this.element.appendChild(this.timer.render());
+    this.element.appendChild(this.timer1.render());
     
+    // Add the banner below the main slider
+    this.element.appendChild(this.banner.render());
+
+    
+    this.element.appendChild(this.timer2.render());
+
     // Add product containers
     this.element.appendChild(this.productContainer1.render());
     this.element.appendChild(this.productContainer2.render());
@@ -92,44 +79,129 @@ export class Center {
     
     this.element.appendChild(this.productContainer3.render());
     
-    // Add image banner
-    this.element.appendChild(this.imageBanner1.render());
-    this.element.appendChild(this.columnGridContainer1.render());
-    this.element.appendChild(this.columnGridContainer2.render());
-    this.element.appendChild(this.columnGridContainer3.render());
-
+    const moreContent = document.createElement('div');
+    moreContent.innerHTML = `
+      <div class="image-banner"></div>
+    `;
+    this.element.appendChild(moreContent);
+    
     this.element.appendChild(this.sectionHeader3.render());
     
     this.element.appendChild(this.productContainer4.render());
     
-    // Add image banner
-    this.element.appendChild(this.imageBanner2.render());
+    const evenMoreContent = document.createElement('div');
+    evenMoreContent.innerHTML = `
+      <div class="image-banner"></div>
+    `;
+    this.element.appendChild(evenMoreContent);
     
     this.element.appendChild(this.productContainer5.render());
     this.element.appendChild(this.productContainer6.render());
     
     this.element.appendChild(this.sectionHeader4.render());
     
-    // Add image banner
-    this.element.appendChild(this.imageBanner3.render());
+    const finalContent = document.createElement('div');
+    finalContent.innerHTML = `
+      <div class="slick-track"></div>
+      <div class="column-grid-container"></div>
+      <div class="column-grid-container"></div>
+      <div class="column-grid-container"></div>
+      <div class="column-grid-container"></div>
+      <div class="column-grid-container"></div>
+      <div class="column-grid-container"></div>
+      <div class="column-grid-container"></div>
+      <div class="image-banner"></div>
+    `;
+    this.element.appendChild(finalContent);
     
     // Add remaining product containers with image banners
     this.element.appendChild(this.productContainer7.render());
     
-    this.element.appendChild(this.imageBanner4.render());
-    this.element.appendChild(this.imageBanner5.render());
-    this.element.appendChild(this.imageBanner6.render());
-    this.element.appendChild(this.imageBanner7.render());
+    const imageBanner1 = document.createElement('div');
+    imageBanner1.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner1);
     
+    this.element.appendChild(this.productContainer8.render());
     
-    this.element.appendChild(this.brandWrapper1.render());
+    const imageBanner2 = document.createElement('div');
+    imageBanner2.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner2);
     
+    this.element.appendChild(this.productContainer9.render());
     
-    this.element.appendChild(this.brandWrapper2.render());
+    const imageBanner3 = document.createElement('div');
+    imageBanner3.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner3);
     
-    this.element.appendChild(this.brandWrapper3.render());
+    this.element.appendChild(this.productContainer10.render());
     
-    this.element.appendChild(this.columnGridContainer4.render());
+    const imageBanner4 = document.createElement('div');
+    imageBanner4.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner4);
+    
+    this.element.appendChild(this.productContainer11.render());
+    
+    const imageBanner5 = document.createElement('div');
+    imageBanner5.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner5);
+    
+    this.element.appendChild(this.productContainer12.render());
+    
+    const imageBanner6 = document.createElement('div');
+    imageBanner6.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner6);
+    
+    this.element.appendChild(this.productContainer13.render());
+    
+    const imageBanner7 = document.createElement('div');
+    imageBanner7.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner7);
+    
+    this.element.appendChild(this.productContainer14.render());
+    
+    const imageBanner8 = document.createElement('div');
+    imageBanner8.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner8);
+    
+    this.element.appendChild(this.productContainer15.render());
+    
+    const brandWrapper1 = document.createElement('div');
+    brandWrapper1.innerHTML = '<div class="brand--wrapper"></div>';
+    this.element.appendChild(brandWrapper1);
+    
+    const imageBanner9 = document.createElement('div');
+    imageBanner9.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner9);
+    
+    this.element.appendChild(this.productContainer16.render());
+    
+    const brandWrapper2 = document.createElement('div');
+    brandWrapper2.innerHTML = '<div class="brand--wrapper"></div>';
+    this.element.appendChild(brandWrapper2);
+    
+    const imageBanner10 = document.createElement('div');
+    imageBanner10.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner10);
+    
+    this.element.appendChild(this.productContainer17.render());
+    
+    const brandWrapper3 = document.createElement('div');
+    brandWrapper3.innerHTML = '<div class="brand--wrapper"></div>';
+    this.element.appendChild(brandWrapper3);
+    
+    const imageBanner11 = document.createElement('div');
+    imageBanner11.innerHTML = '<div class="image-banner"></div>';
+    this.element.appendChild(imageBanner11);
+    
+    this.element.appendChild(this.productContainer18.render());
+    
+    const finalElements = document.createElement('div');
+    finalElements.innerHTML = `
+      <div class="column-grid-container"></div>
+      <div class="image-banner"></div>
+      <div class="image-banner"></div>
+    `;
+    this.element.appendChild(finalElements);
   }
 
   render() {

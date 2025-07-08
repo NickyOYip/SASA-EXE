@@ -38,8 +38,8 @@ a {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-a:hover {
-  text-decoration: none;
+a:hover .sc-kA-DFXn .cvpXPN{
+  text-decoration: none !important;
 }
 .column-grid-container__wrapper {
   margin: 0 auto;
@@ -324,34 +324,4 @@ a:hover {
 
 .product-list-container{
   width: 100%;
-}
-
-/* Specific targeting for data-qe-id elements and their children only */
-[data-qe-id="body-sale-page-title-text"],
-[data-qe-id="body-sale-page-title-text"] *,
-[data-qe-id="body-price-text"],
-[data-qe-id="body-price-text"] * {
-  text-decoration: none !important;
-}
-
-[data-qe-id="body-sale-page-title-text"]:hover,
-[data-qe-id="body-sale-page-title-text"] *:hover,
-[data-qe-id="body-price-text"]:hover,
-[data-qe-id="body-price-text"] *:hover {
-  text-decoration: none !important;
-}
-
-/* Product card specific rules - children only */
-.sc-haTbPV .xGors *,
-.sc-haTbPV .xGors a,
-.product-card__vertical *,
-.product-card__vertical a {
-  text-decoration: none !important;
-}
-
-.sc-haTbPV .xGors *:hover,
-.sc-haTbPV .xGors a:hover,
-.product-card__vertical *:hover,
-.product-card__vertical a:hover {
-  text-decoration: none !important;
 }
