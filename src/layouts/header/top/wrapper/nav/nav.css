@@ -80,6 +80,7 @@ a {
 }
 
 .headerA__nav-menu-main .nav-menu-ul {
+  padding-left: 3px;
   flex: 1;
   padding-left: 3px;
   overflow: visible;
@@ -115,6 +116,7 @@ a {
 .headerA__nav-menu .nav-menu-li .nav-menu-link:hover {
   text-decoration: none;
 }
+
 
 .headerA__nav-menu .shop-category-multi-level-menu-li {
   position: static;
@@ -179,9 +181,8 @@ a {
   padding: 2px;
 }
 
-.nav-menu-li .ico-chevron-down {
-  padding: 2px;
-}
+
+
 /* === DROPDOWN MENUS === */
 
 /* My Account Menu */
@@ -658,10 +659,24 @@ padding: 0px 12px;
   line-height: 1;
 }
 
+
+.nav-menu-title.ico-chevron-down:hover {
+  text-decoration: none !important;
+}
+
+.ico-chevron-down:before:hover {
+  text-decoration: none !important;
+}
 .ico-chevron-down:before {
   content: "\ea12";
 }
 
+.nav-menu-link .ico-chevron-down:before{
+  padding-top: 2px;
+}
+.nav-menu-link .nav-menu-title-cat .ico-chevron-down:before{
+  padding-top: 0px;
+}
 .ico-chevron-right:before {
   content: "\ea14";
 }

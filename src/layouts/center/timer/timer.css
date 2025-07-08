@@ -63,38 +63,6 @@ h1 {
   transform: translateX(100%);
 }
 
-.timer__digits--fade-in {
-  animation: fadeIn-0 400ms ease;
-  opacity: 1;
-}
-
-.timer__digits--fade-in-alt {
-  animation: fadeIn-1 400ms ease;
-  opacity: 1;
-}
-
-@keyframes fadeIn-0 {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn-1 {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /*! CSS Used from: Embedded */
 .hrRWgs {
   background-color: rgb(255, 255, 255);
