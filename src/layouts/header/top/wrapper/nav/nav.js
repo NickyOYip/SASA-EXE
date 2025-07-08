@@ -164,8 +164,7 @@ export class Nav {
           <!-- Category Menu -->
           <li class="nav-menu-li header-category-menu-li shop-category-multi-level-menu-li">
             <a class="nav-menu-link">
-              <div class="nav-menu-title-cat" style="color: rgb(68, 68, 68);">Category</div>
-              <i class="ico ico-chevron-down" id="category-dropdown-toggle" style="color: rgb(68, 68, 68);"></i>
+              <div class="nav-menu-title-cat" style="color: rgb(68, 68, 68);">Category<i class="ico ico-chevron-down" id="category-dropdown-toggle" style="color: rgb(68, 68, 68);"></i></div>
             </a>
           </li>
 

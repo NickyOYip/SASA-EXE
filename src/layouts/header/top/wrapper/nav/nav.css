@@ -81,6 +81,7 @@ a {
 
 .headerA__nav-menu-main .nav-menu-ul {
   flex: 1;
+  padding-left: 3px;
   overflow: visible;
 }
 
@@ -94,7 +95,7 @@ a {
 
 .headerA__nav-menu .nav-menu-li {
   float: left;
-  padding: 0 12px;
+  padding: 0 0px;
   position: relative;
 }
 
@@ -166,8 +167,9 @@ a {
   padding: 2px;
 }
 
-
-
+.nav-menu-li .ico-chevron-down {
+  padding: 0px;
+}
 /* === DROPDOWN MENUS === */
 
 /* My Account Menu */
@@ -528,7 +530,16 @@ a {
   vertical-align: middle;
 }
 
-
+.nav-menu-li .nav-menu-link {
+padding: 0px 12px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: inline-flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+}
 .nav-dropdown-menu {
   display: none;
   position: absolute;
