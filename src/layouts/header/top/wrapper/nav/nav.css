@@ -162,6 +162,18 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nav-menu-title {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 255px;
+}
 
 .nav-menu .ico-chevron-down {
   padding: 2px;
@@ -526,7 +538,6 @@ a {
 
 /* Fix icon alignment in nav-menu-link */
 .nav-menu-link .ico {
-  line-height: inherit;
   vertical-align: middle;
 }
 
